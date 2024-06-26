@@ -7,7 +7,7 @@
     <persistence-unit name="zoo">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-        <class>org.example.Entity.Animals</class>
+        <class>org.example.entity.Animals</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>

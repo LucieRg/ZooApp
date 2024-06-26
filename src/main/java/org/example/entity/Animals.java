@@ -1,8 +1,9 @@
-package org.example.Entity;
+package org.example.entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.example.util.Diet;
 
 import javax.persistence.*;
 import java.time.LocalDate;

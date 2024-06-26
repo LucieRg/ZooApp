@@ -1,7 +1,7 @@
-package org.example.Ihm;
+package org.example.util;
 
-import org.example.Dao.AnimalDao;
-import org.example.Service.AnimalService;
+import org.example.repository.AnimalRepository;
+import org.example.service.AnimalService;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -18,9 +18,9 @@ public class Ihm {
     public static void start() {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("zoo");
         EntityManager em = emf.createEntityManager();
-        AnimalDao animalDao = new AnimalDao(em);
+        AnimalRepository animalRepository = new AnimalRepository(em);
         Scanner scanner = new Scanner(System.in);
-        AnimalService animalService = new AnimalService(animalDao, scanner);
+        AnimalService animalService = new AnimalService(animalRepository, scanner);
         Ihm ihm = new Ihm(animalService);
 
         try {

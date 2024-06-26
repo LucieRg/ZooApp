@@ -1,4 +1,4 @@
-package org.example.Ihm;
+package org.example.util;
 
 public class MenuApp {
     public static void displayMenu() {
